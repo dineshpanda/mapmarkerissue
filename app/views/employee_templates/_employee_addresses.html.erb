@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header d-flex align-items-center justify-content-between">
+    Addresses
+
+    <a data-toggle="collapse" href="#employee_addresses_new_form">
+      Add address
+    </a>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <% @employee.addresses.each do |address| %>
+      <li class="list-group-item d-flex align-items-center justify-content-between">
+        <!-- Show link start -->
+        <a href="/addresses/<%= address.id %>">
+          <%= address.employee_id %>
+        </a>
+        <!-- Show link end -->
+
+      </li>
+    <% end %>
+
+  </ul>
+</div>
