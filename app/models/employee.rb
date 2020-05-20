@@ -1,4 +1,6 @@
 class Employee < ApplicationRecord
+  mount_uploader :photo, PhotoUploader
+
   # Direct associations
 
   has_many   :addresses,
