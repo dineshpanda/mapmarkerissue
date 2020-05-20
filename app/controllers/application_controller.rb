@@ -1,5 +1,9 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_employee!
+  rescue_from UncaughtThrowError do |e|
+    redirect_to root_path if e.tag == :warden
+  end
+
 
   
 
