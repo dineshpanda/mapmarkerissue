@@ -24,7 +24,7 @@
     </label>
 
     <!-- Input for employee_id start -->
-    <input type="text" id="employee_id" name="employee_id" class="form-control" value="<%= @address.employee_id %>">
+    <%= select_tag(:employee_id, options_from_collection_for_select(Employee.all, :id, :name, @address.employee_id), :class => "form-control") %>
     <!-- Input for employee_id end -->
   </div>
   <!-- Label and input for employee_id end -->
