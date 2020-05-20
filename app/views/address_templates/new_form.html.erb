@@ -1,0 +1,45 @@
+<h1>
+  Add a new address
+</h1>
+
+
+<hr>
+
+<!-- Form address start -->
+<form action="/create_address" method="post">
+<!-- Form address end -->
+
+  <!-- Label and input for employee_id start -->
+  <div class="form-group">
+    <label for="employee_id">
+      Employee
+    </label>
+
+    <!-- Input for employee_id start -->
+    <input type="text" id="employee_id" name="employee_id" class="form-control">
+    <!-- Input for employee_id end -->
+  </div>
+  <!-- Label and input for employee_id end -->
+
+  <!-- Label and input for office_addr start -->
+  <div class="form-group">
+    <label for="office_addr">
+      Office addr
+    </label>
+
+    <!-- Input for office_addr start -->
+    <input type="text" id="office_addr" name="office_addr" class="form-control">
+    <!-- Input for office_addr end -->
+  </div>
+  <!-- Label and input for office_addr end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create address
+  </button>
+</form>
+
+<hr>
+
+<a href="/addresses">
+  Go back
+</a>
