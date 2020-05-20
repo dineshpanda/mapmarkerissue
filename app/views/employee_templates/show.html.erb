@@ -1,0 +1,76 @@
+<div class="row mb-3">
+  <div class="col-md-8 offset-md-2">
+    <h1>
+      Employee #<%= @employee.id %> details
+    </h1>
+
+    <div class="row mb-3">
+      <div class="col">
+        <a href="/employees" class="btn btn-block btn-outline-secondary">
+          Go back
+        </a>
+      </div>
+
+    </div>
+
+    <dl>
+      <dt>
+        Name
+      </dt>
+      <!-- Display name start -->
+      <dd>
+        <%= @employee.name %>
+      </dd>
+      <!-- Display name end -->
+
+      <dt>
+        Emp
+      </dt>
+      <!-- Display emp_id start -->
+      <dd>
+        <%= @employee.emp_id %>
+      </dd>
+      <!-- Display emp_id end -->
+
+      <dt>
+        Emp type
+      </dt>
+      <!-- Display emp_type start -->
+      <dd>
+        <%= @employee.emp_type %>
+      </dd>
+      <!-- Display emp_type end -->
+
+      <dt>
+        Photo
+      </dt>
+      <!-- Display photo start -->
+      <dd>
+        <%= @employee.photo %>
+      </dd>
+      <!-- Display photo end -->
+
+      <dt>
+        Created at
+      </dt>
+      <!-- Display created_at start -->
+      <dd>
+        <%= time_ago_in_words(@employee.created_at) %> ago
+      </dd>
+      <!-- Display created_at end -->
+
+      <dt>
+        Updated at
+      </dt>
+      <!-- Display updated_at start -->
+      <dd>
+        <%= time_ago_in_words(@employee.updated_at) %> ago
+      </dd>
+      <!-- Display updated_at end -->
+    </dl>
+  </div>
+</div>
+
+<!-- Show Page Customization starts -->
+
+<!-- Show Page Customization end -->
