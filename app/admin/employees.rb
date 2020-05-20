@@ -1,5 +1,7 @@
 ActiveAdmin.register Employee do
 
+ permit_params :name, :emp_id, :emp_type, :photo, :email, :password
+
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
