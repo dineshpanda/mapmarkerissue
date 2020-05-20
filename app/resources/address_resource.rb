@@ -7,6 +7,8 @@ class AddressResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :employee
+
   # Indirect associations
 
 end

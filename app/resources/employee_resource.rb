@@ -11,6 +11,8 @@ class EmployeeResource < ApplicationResource
 
   # Direct associations
 
+  has_many   :addresses
+
   # Indirect associations
 
 end
