@@ -64,7 +64,11 @@
 
         <!-- Display address.employee_id start -->
         <td>
-          <%= address.employee.name %>
+          <% if address.employee.present? %>
+            <a href="/employees/<%= address.employee.id %>">
+              <%= address.employee.name %>
+            </a>
+          <% end %>
         </td>
         <!-- Display address.employee_id end -->
 

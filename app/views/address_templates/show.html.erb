@@ -34,7 +34,11 @@
       </dt>
       <!-- Display employee_id start -->
       <dd>
-        <%= @address.employee_id %>
+        <% if @address.employee.present? %>
+          <a href="/employees/<%= @address.employee_id %>">
+            <%= @address.employee.name %>
+          </a>
+        <% end %>
       </dd>
       <!-- Display employee_id end -->
 
