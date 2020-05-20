@@ -1,4 +1,3 @@
-<!-- Validation failure messages -->
 <% if @address.errors.any? %>
   <% @address.errors.full_messages.each do |message| %>
     <div class="alert">
@@ -13,33 +12,23 @@
 
 <hr>
 
-<!-- Form address start -->
 <form action="/update_address/<%= @address.id %>" method="post">
-<!-- Form address end -->
 
-  <!-- Label and input for employee_id start -->
   <div class="form-group">
     <label for="employee_id">
       Employee
     </label>
 
-    <!-- Input for employee_id start -->
     <%= select_tag(:employee_id, options_from_collection_for_select(Employee.all, :id, :name, @address.employee_id), :class => "form-control") %>
-    <!-- Input for employee_id end -->
   </div>
-  <!-- Label and input for employee_id end -->
 
-  <!-- Label and input for office_addr start -->
   <div class="form-group">
     <label for="office_addr">
       Office addr
     </label>
 
-    <!-- Input for office_addr start -->
     <input type="text" id="office_addr" name="office_addr" class="form-control" value="<%= @address.office_addr %>">
-    <!-- Input for office_addr end -->
   </div>
-  <!-- Label and input for office_addr end -->
 
   <button class="btn btn-block btn-outline-secondary">
     Update address

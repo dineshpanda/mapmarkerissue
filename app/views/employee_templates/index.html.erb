@@ -8,13 +8,9 @@
   </div>
 </div>
 
-<!-- Ransack Code start -->
 
-<!-- Ransack Code end -->
 
-<!-- Location Map Code start -->
 
-<!-- Location Map Code end -->
 
 <hr>
 
@@ -56,47 +52,33 @@
 
       <% @employees.each do |employee| %>
       <tr>
-        <!-- Display employee.id start -->
         <td>
           <%= employee.id %>
         </td>
-        <!-- Display employee.id end -->
 
-        <!-- Display employee.name start -->
         <td>
           <%= employee.name %>
         </td>
-        <!-- Display employee.name end -->
 
-        <!-- Display employee.emp_id start -->
         <td>
           <%= employee.emp_id %>
         </td>
-        <!-- Display employee.emp_id end -->
 
-        <!-- Display employee.emp_type start -->
         <td>
           <%= employee.emp_type %>
         </td>
-        <!-- Display employee.emp_type end -->
 
-        <!-- Display employee.photo start -->
         <td>
           <img src='<%= employee.photo %>' class='img-fluid'>
         </td>
-        <!-- Display employee.photo end -->
 
-        <!-- Display employee.created_at start -->
         <td>
           <%= time_ago_in_words(employee.created_at) %> ago
         </td>
-        <!-- Display employee.created_at end -->
 
-        <!-- Display employee.updated_at start -->
         <td>
           <%= time_ago_in_words(employee.updated_at) %> ago
         </td>
-        <!-- Display employee.updated_at end -->
 
         <td>
           <a href="/employees/<%= employee.id %>">

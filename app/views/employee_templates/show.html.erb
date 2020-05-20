@@ -17,64 +17,50 @@
       <dt>
         Name
       </dt>
-      <!-- Display name start -->
       <dd>
         <%= @employee.name %>
       </dd>
-      <!-- Display name end -->
 
       <dt>
         Emp
       </dt>
-      <!-- Display emp_id start -->
       <dd>
         <%= @employee.emp_id %>
       </dd>
-      <!-- Display emp_id end -->
 
       <dt>
         Emp type
       </dt>
-      <!-- Display emp_type start -->
       <dd>
         <%= @employee.emp_type %>
       </dd>
-      <!-- Display emp_type end -->
 
       <dt>
         Photo
       </dt>
-      <!-- Display photo start -->
       <dd>
         <img src="<%= @employee.photo %>" class="img-fluid">
       </dd>
-      <!-- Display photo end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@employee.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@employee.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
 <div class="row mb-3">
   <div class="col-md-8 offset-md-2">
     <%= render partial: "employee_templates/employee_addresses" %>
   </div>
 </div>
-<!-- Show Page Customization end -->
